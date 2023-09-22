@@ -1,0 +1,17 @@
+# .rubocop.yml
+
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/migrate/**/*'
+    - 'bin/*'
+    - 'config/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'spec/spec_helper.rb'
+    - 'spec/rails_helper.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/controllers/repositories_controller_spec.rb'
+    - 'spec/services/github_repository_search_service_spec.rb'

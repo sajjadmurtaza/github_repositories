@@ -1,0 +1,13 @@
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to repo.name, repo.owner.html_url, target: "_blank" %></h5>
+      <p class="card-text">Owner: <%= repo.owner.login %></p>
+      <p class="card-text">Description: <%= truncate(repo.description || 'N/A', length: 50) %></p>
+      <p class="card-text">Language: <%= repo.language || 'N/A' %></p>
+      <p class="card-text">Stars: <%= repo.stargazers_count %></p>
+      <p class="card-text">Forks: <%= repo.forks_count %></p>
+      <a href="<%= repo.html_url %>" target="_blank" class="btn btn-primary">Visit Repository</a>
+    </div>
+  </div>
+</div>
